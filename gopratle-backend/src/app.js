@@ -5,12 +5,13 @@ import requirementRoutes from "./routes/requirement.routes.js";
 const app = express();
 
 app.use(
-  cors({
-    origin:[ "http://localhost:3000",
-        "https://event-planner-ten-theta.vercel.app"
-    ]
-  })
-);
+    cors({
+      origin: [
+        "http://localhost:3000",
+        "https://event-planner-ten-theta.vercel.app",
+      ],
+    }),
+  );
 
 app.use(express.json());
 
