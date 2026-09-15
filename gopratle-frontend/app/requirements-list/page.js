@@ -12,7 +12,7 @@ export default function RequirementsListPage() {
     const fetchRequirements = async () => {
       try {
         const response = await fetch(
-          "https://event-planner-004u.onrender.com/api/requirements"
+          `${process.env.NEXT_PUBLIC_API_URL}/api/requirements`
         );
 
         const data = await response.json();
