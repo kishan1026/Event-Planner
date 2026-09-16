@@ -197,7 +197,7 @@ export default function RequirementForm() {
         additionalRequirements: formData.additionalRequirements,
       };
 
-      const response = await fetch( `${process.env.NEXT_API_URL}/api/requirements`, {
+      const response = await fetch( `${process.env.NEXT_PUBLIC_API_URL}/api/requirements`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
